@@ -8,8 +8,12 @@
 
 - *config/production.rb*
 
-    config.action_mailer.default_url_options = {:host => 'mail-server-here'}
+```ruby
+config.action_mailer.default_url_options = {:host => 'mail-server-here'}
+```
 
 - *config/initializers/devise.rb*
 
-    config.mailer_sender = 'your-website-email@yourwebsite.com'
+```ruby
+config.mailer_sender = 'your-website-email@yourwebsite.com'
+```

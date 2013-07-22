@@ -1,8 +1,19 @@
 Recycle::Application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  devise_for :users, :path_names => {
+      :sign_up => 'register',
+      :sign_in => 'login',
+      :profile => 'profile',
+      :sign_out => 'logout',
+  }
 
-  # You can have the root of your site routed with "root"
+  devise_scope :user do
+    get 'register'=> 'devise/registrations#new'
+    get 'login' => 'devise/sessions#new'
+    get 'profile' => 'devise/registrations#edit'
+    delete 'logout'=> 'devise/sessions#destroy'
+
+  end
+
   root 'pages#home'
 
   # Example of regular route:

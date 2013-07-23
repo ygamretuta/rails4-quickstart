@@ -1,4 +1,6 @@
 Recycle::Application.routes.draw do
+  resources :books
+
   devise_for :users, :path_names => {
       :sign_up => 'register',
       :sign_in => 'login',

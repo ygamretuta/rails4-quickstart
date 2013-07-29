@@ -22,6 +22,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'kaminari'
 
+# situational
+gem 'therubyracer'
+
 group :development do
   gem 'capistrano'
   gem 'letter_opener'

@@ -4,4 +4,5 @@ class Book < ActiveRecord::Base
   mount_uploader :photo, PhotoUploader
 
   attr_accessible :buyer, :seller, :title, :photo, :price
+  paginates_per 1
 end

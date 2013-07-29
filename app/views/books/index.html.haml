@@ -1,6 +1,6 @@
 %h1 Listing books
 
-%table
+%table.table
   %tr
     %th Title
     %th Price
@@ -21,5 +21,7 @@
       %td= link_to 'Destroy', book, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
+
+= paginate @books
 
 = link_to 'New Book', new_book_path

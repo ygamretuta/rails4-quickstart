@@ -20,6 +20,7 @@ gem 'high_voltage'
 gem 'protected_attributes'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'kaminari'
 
 group :development do
   gem 'capistrano'

@@ -30,6 +30,12 @@ paginates_per 5
 config.default_per_page = 25
 ```
 
+- set individual page titles (optional, on any view)
+
+```
+- title 'Your Page Title Here'
+```
+
 
 ## deploy gotchas
 ### deploying for webfaction

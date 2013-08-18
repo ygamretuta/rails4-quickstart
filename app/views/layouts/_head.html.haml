@@ -1,5 +1,6 @@
 %head
-  %title Recycle
+  %title
+    = (yield :title).empty? ? t('app.default_title') : "#{t('app.default_title')} | #{yield(:title)}"
   %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
 
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true

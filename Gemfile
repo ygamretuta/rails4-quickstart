@@ -23,11 +23,21 @@ gem 'mini_magick'
 gem 'kaminari'
 
 # situational
-gem 'therubyracer'
+group :webfaction do
+  gem 'therubyracer'
+end
 
 group :development do
   gem 'capistrano'
   gem 'letter_opener'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'spring'
+  gem 'capybara'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
 end
 
 group :doc do

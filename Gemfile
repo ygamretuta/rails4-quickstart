@@ -34,9 +34,7 @@ group :development do
   gem 'guard-rspec'
   gem 'spring'
   gem 'capybara'
-end
-
-group :development, :test do
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 2.0'
 end
 

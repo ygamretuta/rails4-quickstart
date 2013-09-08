@@ -14,8 +14,8 @@
     %tr
       %td= book.title
       %td= book.price
-      %td= book.buyer
-      %td= book.seller
+      %td= book.buyer.email
+      %td= book.seller.email
       %td= link_to 'Show', book
       %td= link_to 'Edit', edit_book_path(book)
       %td= link_to 'Destroy', book, :method => :delete, :data => { :confirm => 'Are you sure?' }

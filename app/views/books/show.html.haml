@@ -8,10 +8,10 @@
   = @book.price
 %p
   %b Buyer:
-  = @book.buyer
+  = @book.buyer.email
 %p
   %b Seller:
-  = @book.seller
+  = @book.seller.email
 
 = link_to 'Edit', edit_book_path(@book)
 \|

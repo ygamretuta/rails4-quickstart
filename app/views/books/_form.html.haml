@@ -4,8 +4,8 @@
   .form-inputs
     = f.input :title
     = f.input :price
-    = f.association :buyer
-    = f.association :seller
+    = f.association :buyer, :label_method => :email
+    = f.association :seller, :label_method => :email
 
   .form-actions
     = f.button :submit, :class => 'btn-primary'
